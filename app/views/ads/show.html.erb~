@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>Nazwa:</b>
   <%= @ad.name %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Opis:</b>
   <%= @ad.description %>
 </p>
 
 <p>
-  <b>Price:</b>
+  <b>Cena:</b>
   <%= @ad.price %>
 </p>
 
 <p>
-  <b>Seller:</b>
+  <b>Nr Sprzedawcy:</b>
   <%= @ad.seller_id %>
 </p>
 
 <p>
-  <b>Seller login:</b>
+  <b>Sprzedawca:</b>
   <%= @ad.seller_login %>
 </p>
 
@@ -36,5 +36,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_ad_path(@ad) %> |
-<%= link_to 'Back', ads_path %>
+<%= link_to 'Edytuj', edit_ad_path(@ad) %> |
+<%= link_to 'Powrót', ads_path %>
