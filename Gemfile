@@ -7,7 +7,6 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3', :group => :development
 
-gem 'thin'
 
 gem 'thin'
 gem 'json'
