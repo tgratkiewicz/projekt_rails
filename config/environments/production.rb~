@@ -1,7 +1,4 @@
 ProjektRails::Application.configure do
-
-  config.active_support.deprecation = :silence
-
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
