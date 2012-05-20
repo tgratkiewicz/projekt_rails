@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nazwa:</b>
+  <%= @ad.name %>
+</p>
+
+<p>
+  <b>Opis:</b>
+  <%= @ad.description %>
+</p>
+
+<p>
+  <b>Cena:</b>
+  <%= @ad.price %>
+</p>
+
+<p>
+  <b>Nr Sprzedawcy:</b>
+  <%= @ad.seller_id %>
+</p>
+
+<p>
+  <b>Sprzedawca:</b>
+  <%= @ad.seller_login %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @ad.email %>
+</p>
+
+<p>
+  <b>Img url:</b>
+  <%= @ad.img_url %>
+</p>
+
+
+<%= link_to 'Edytuj', edit_ad_path(@ad) %> |
+<%= link_to 'Powrót', ads_path %>

@@ -1,0 +1,35 @@
+<h1>Lista Ofert ads</h1>
+
+<table>
+  <tr>
+    <th>Nazwa</th>
+    <th>Opis</th>
+    <th>Cena</th>
+    <th>Nr Sprzedawcy</th>
+    <th>Sprzedawca</th>
+    <th>Email</th>
+    <th>Img url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ads.each do |ad| %>
+  <tr>
+    <td><%= ad.name %></td>
+    <td><%= ad.description %></td>
+    <td><%= ad.price %></td>
+    <td><%= ad.seller_id %></td>
+    <td><%= ad.seller_login %></td>
+    <td><%= ad.email %></td>
+    <td><%= ad.img_url %></td>
+    <td><%= link_to 'Pokarz', ad %></td>
+    <td><%= link_to 'Edytuj', edit_ad_path(ad) %></td>
+    <td><%= link_to 'Usuń', ad, :confirm => 'Czy napewno chcesz usunąć ogłoszenie?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj nowe ogłoszenie', new_ad_path %>

@@ -1,0 +1,6 @@
+<h1>Edycja ogłoszenia ad</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Pokarz', @ad %> |
+<%= link_to 'Powrót', ads_path %>
