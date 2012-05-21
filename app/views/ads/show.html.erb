@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Nazwa:</b>
-  <%= @ad.name %>
+  <h1><%= @ad.name %></h1>
 </p>
 
 <p>
@@ -12,7 +11,7 @@
 
 <p>
   <b>Cena:</b>
-  <%= @ad.price %>
+  <%= @ad.price %> zł
 </p>
 
 <p>
@@ -37,4 +36,5 @@
 
 
 <%= link_to 'Edytuj', edit_ad_path(@ad) %> |
+<%= link_to 'Usuń', ad_path(@ad), :confirm => 'Czy napewno chcesz usunąć ogłoszenie?', :method => :delete %>
 <%= link_to 'Powrót', ads_path %>

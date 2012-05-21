@@ -16,7 +16,7 @@
 
 			<ul id="nav">
 				<li><a href="/ads/">Wszystkie Ogłoszenia</a></li>
-				<li><%= link_to 'Dodaj nowe ogłoszenie', new_ad_path %></li>
+				<%= link_to 'Dodaj nowe ogłoszenie', new_ad_path %>
 			</ul>
 			</div>
 		</div>
